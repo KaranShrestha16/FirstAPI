@@ -4,12 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmployeeRegistration"
+    tools:context=".UpdateDelete"
     android:orientation="vertical"
     >
+    <EditText
+        android:id="@+id/etSearchh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Employee ID"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnSearchh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/etNamee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Employee Name"
@@ -19,7 +40,7 @@
         android:textSize="20sp"
         />
     <EditText
-        android:id="@+id/etSalary"
+        android:id="@+id/etSalaryy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -30,7 +51,7 @@
         android:textSize="20sp"
         />
     <EditText
-        android:id="@+id/etAge"
+        android:id="@+id/etAgee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
@@ -42,13 +63,25 @@
         />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Update"
         android:textSize="20sp"
         android:layout_marginRight="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="30dp"/>
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textSize="20sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+
 
 </LinearLayout>

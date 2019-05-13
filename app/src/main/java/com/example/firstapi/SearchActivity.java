@@ -67,7 +67,6 @@ public class SearchActivity extends AppCompatActivity {
             public void onResponse(Call<Employees> call, Response<Employees> response) {
                 Toast.makeText(SearchActivity.this,response.body().toString() ,Toast.LENGTH_LONG).show();
                 String content="";
-
                 content+="ID :"+ response.body().getId()+ "\n";
                 content+=" Name :"+ response.body().getEmployee_name()+ "\n";
                 content+=" Age :"+ response.body().getEmployee_age()+ "\n";

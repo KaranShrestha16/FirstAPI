@@ -19,12 +19,12 @@ public interface EmployeeAPI {
       Call<List<Employees>> getAllEMployess();
 
       // Get employee on basic of employee id
-      @GET("employee/{empID}")
+      @GET("employees/{empID}")
       Call<Employees> getEmployeeByID(@Path("empID") int empID);
 
       // update employee on basis of emp id
-      @PUT("employee/{empID}")
-      Call<Void> updateEmployees(@Path("empID") int empId);
+      @PUT("employees/{empID}")
+      Call<Void> updateEmployees(@Path("empID") int empId, EmployeeCUD emp);
 
       // Add Employee to Web API
       @POST("create")

@@ -2,6 +2,7 @@ package com.example.firstapi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class EmployeeRegistration extends AppCompatActivity {
 
-    private final static String BASE_URL ="http://dummy.restapiexample.com/api/v1";
+    private final static String BASE_URL ="http://dummy.restapiexample.com/api/v1/";
     private EditText etName, etSalary,etAge;
     private Button btnRegister;
 
@@ -27,7 +28,7 @@ public class EmployeeRegistration extends AppCompatActivity {
         setContentView(R.layout.activity_employee_registration);
 
         etAge=findViewById(R.id.etAge);
-        etSalary=findViewById(R.id.etSearch);
+        etSalary=findViewById(R.id.etSalary);
         etName=findViewById(R.id.etName);
         btnRegister=findViewById(R.id.btnRegister);
 
@@ -41,7 +42,6 @@ public class EmployeeRegistration extends AppCompatActivity {
     }
 
     private void Register(){
-
         EmployeeCUD emp= new EmployeeCUD(etName.getText().toString(),Float.parseFloat(etSalary.getText().toString()),Integer.parseInt(etAge.getText().toString()));
 
         Retrofit retrofit= new Retrofit.Builder()
